@@ -1,0 +1,13 @@
+<h3>
+	BADBOY
+</h3>
+<h1 style="color: red">
+  {{badboy.name}}
+</h1>
+<h3>
+	SKILLS:
+</h3>
+  <li *ngFor = 'let skill of badboy.skills' style="list-style: none">
+    <h1>{{skill}}</h1>
+  </li>
+<input type="text" class="form-control" value='{{badboy.name}}' placeholder="" [(ngModel)]="badboy.name"/>
