@@ -1,0 +1,49 @@
+.hero {
+  color: white;
+  box-shadow: 5px 5px 5px #999999;
+  padding: 10px;
+  border: solid 1px green;
+  width: 50%;
+  text-align: center;
+  background-image: url(../../../assets/img/hero.jpg);
+}
+
+.vs {
+  align-items: center;
+  width: 20%;
+  text-align: center;
+}
+
+.vs h1 {
+  color: red;
+  font-weight: bold;
+  font-size: 100px;
+  font-style: italic;
+}
+
+.avenger {
+}
+
+.btn-detail {
+  padding: 5px;
+  width: 200px;
+  margin: 10px 0;
+  background-color: aqua;
+}
+
+.btn-detail:hover, .btn-detail:focus {
+  background-color: burlywood;
+}
+
+.thanos {
+  box-shadow: 5px 5px 5px #999999;
+  padding: 10px;
+  border: solid 1px red;
+  width: 400px;
+  text-align: center;
+  background-image: url(../../../assets/img/thanos.png);
+  color: #ffffff
+}
+.selectedHero{
+  color: red;
+}

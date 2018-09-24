@@ -1,13 +1,17 @@
-<h3>
-	HERO
-</h3>
-<h1 style="color: green">
-  {{hero.name}}
-</h1>
-<h3>
-	SKILLS:
-</h3>
-<li *ngFor = 'let skill of hero.skills' style="list-style: none">
-  <h1>{{skill}}</h1>
-</li>
-<input type="text" class="form-control" value='{{hero.name}}' placeholder="" [(ngModel)]="hero.name"/>
+<div *ngIf="hero">
+  <h3>
+    HERO
+  </h3>
+  <h1 style="color: green">
+    {{hero.name}}
+  </h1>
+  <h3>
+    SKILLS:
+  </h3>
+  <ul style="list-style: none;">
+    <li *ngFor='let skill of hero.skills' style="list-style: none">
+      <h1>{{skill}}</h1>
+    </li>
+  </ul>
+  <input type="text" class="form-control" value='{{hero.name}}' [(ngModel)]="hero.name"/>
+</div>

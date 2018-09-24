@@ -6,13 +6,14 @@ import { HeroesComponent } from './app/heroes/heroes.component';
 
 import {FormsModule} from '@angular/forms';
 import { BadboysComponent } from './app/badboys/badboys.component';
-
+import { ListHeroComponent } from './app/list-hero/list-hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    BadboysComponent
+    BadboysComponent,
+    ListHeroComponent
   ],
   imports: [
     BrowserModule,
