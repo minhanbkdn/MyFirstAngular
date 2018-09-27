@@ -7,13 +7,15 @@ import { HeroesComponent } from './app/heroes/heroes.component';
 import {FormsModule} from '@angular/forms';
 import { BadboysComponent } from './app/badboys/badboys.component';
 import { ListHeroComponent } from './app/list-hero/list-hero.component';
+import { ListBadboyComponent } from './app/list-badboy/list-badboy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     BadboysComponent,
-    ListHeroComponent
+    ListHeroComponent,
+    ListBadboyComponent
   ],
   imports: [
     BrowserModule,

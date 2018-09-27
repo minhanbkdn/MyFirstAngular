@@ -1,9 +1,9 @@
-.hero {
-  color: white;
+.thanos {
   box-shadow: 5px 5px 5px #999999;
   padding: 10px;
-  border: solid 1px green;
+  border: solid 1px red;
   text-align: center;
+  color: #ffffff;
   background-size: 100% 100%;
 }
 .btn-detail {
@@ -17,10 +17,9 @@
   background-color: burlywood;
 }
 
-.selectedHero{
+.selectedBadboy{
   color: red;
 }
-.list-hero{
-  float: left;
-  padding: 0;
+.list-badboy{
+  float: right;
 }
