@@ -3,9 +3,9 @@
 </div>
 <ul class="list-badboy">
   <li style="list-style: none" *ngFor="let badboy of listBadboy">
-    <button class="btn-detail" (click)="onSelect(badboy)" [class.selectedBadboy]="badboy === selectedBadboy">
+    <a class="btn-detail" (click)="onSelect(badboy)" [class.selectedBadboy]="badboy === selectedBadboy">
       {{badboy.name}}
-    </button>
+    </a>
   </li>
 </ul>
 

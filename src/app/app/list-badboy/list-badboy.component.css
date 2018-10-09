@@ -6,20 +6,55 @@
   color: #ffffff;
   background-size: 100% 100%;
 }
+
 .btn-detail {
   padding: 5px;
-  width: 200px;
+  width: 150px;
   margin: 10px 0;
+  background-color: transparent;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.btn-detail:before, .btn-detail:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background-color: aqua;
+  z-index: -100;
+  transition: 360ms;
+}
+
+.btn-detail:before {
+  top: 0;
+}
+
+.btn-detail:after {
+  bottom: 0;
+}
+
+.btn-detail:hover {
+  cursor: pointer;
+}
+
+.btn-detail:hover:before, .btn-detail:hover:after {
+  height: 100%;
+  opacity: .2;
+}
+
+.selectedBadboy {
+  color: red;
   background-color: aqua;
 }
 
-.btn-detail:hover, .btn-detail:focus {
-  background-color: burlywood;
+.list-badboy {
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.selectedBadboy{
-  color: red;
-}
-.list-badboy{
-  float: right;
-}

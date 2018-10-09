@@ -6,21 +6,64 @@
   text-align: center;
   background-size: 100% 100%;
 }
+
+.list-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-detail {
+  display: block;
   padding: 5px;
-  width: 200px;
+  width: 150px;
   margin: 10px 0;
+  background-color: transparent;
+  position: relative;
+  box-shadow: none;
+  text-align: center;
+}
+
+.btn-detail:before, .btn-detail:after {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: aqua;
+  position: absolute;
+  transition: 360ms;
+  top: 0;
+  z-index: -10;
+}
+
+.btn-detail:before {
+  left: 0;
+}
+
+.btn-detail:after {
+  right: 0;
+}
+
+.btn-detail:hover {
+  cursor: pointer;
+}
+
+.btn-detail:focus {
+  color: red;
+}
+
+.btn-detail:hover:before, .btn-detail:hover:after {
+  cursor: pointer;
+  width: 100%;
+  opacity: .2;
+}
+
+.selectedHero {
+  color: red;
   background-color: aqua;
 }
 
-.btn-detail:hover, .btn-detail:focus {
-  background-color: burlywood;
-}
-
-.selectedHero{
-  color: red;
-}
-.list-hero{
+.list-hero {
   float: left;
   padding: 0;
 }

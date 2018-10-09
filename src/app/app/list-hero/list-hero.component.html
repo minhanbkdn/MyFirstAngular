@@ -3,7 +3,7 @@
 </div>
 <ul class="list-hero">
   <li style="list-style: none" *ngFor="let hero of listHero">
-    <button class="btn-detail" (click)="onSelect(hero)" [class.selectedHero]="hero===selectedHero">{{hero.name}}
-    </button>
+    <a class="btn-detail" (click)="onSelect(hero)" [class.selectedHero]="hero===selectedHero">{{hero.name}}
+    </a>
   </li>
 </ul>
