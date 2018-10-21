@@ -8,6 +8,7 @@ import {FormsModule} from '@angular/forms';
 import { BadboysComponent } from './app/badboys/badboys.component';
 import { ListHeroComponent } from './app/list-hero/list-hero.component';
 import { ListBadboyComponent } from './app/list-badboy/list-badboy.component';
+import { ListMessageComponent } from './app/list-message/list-message.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListBadboyComponent } from './app/list-badboy/list-badboy.component';
     HeroesComponent,
     BadboysComponent,
     ListHeroComponent,
-    ListBadboyComponent
+    ListBadboyComponent,
+    ListMessageComponent
   ],
   imports: [
     BrowserModule,
