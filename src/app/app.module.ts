@@ -9,6 +9,8 @@ import { BadboysComponent } from './app/badboys/badboys.component';
 import { ListHeroComponent } from './app/list-hero/list-hero.component';
 import { ListBadboyComponent } from './app/list-badboy/list-badboy.component';
 import { ListMessageComponent } from './app/list-message/list-message.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './app/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { ListMessageComponent } from './app/list-message/list-message.component'
     BadboysComponent,
     ListHeroComponent,
     ListBadboyComponent,
-    ListMessageComponent
+    ListMessageComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

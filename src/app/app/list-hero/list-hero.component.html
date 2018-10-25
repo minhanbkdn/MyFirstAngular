@@ -1,9 +1,9 @@
-<div class="hero" [ngStyle]="{'background-image': 'url(' + selectedHero.avatar + ')'}">
-  <app-heroes [hero]="selectedHero"></app-heroes>
-</div>
+<!--<div class="hero" [ngStyle]="{'background-image': 'url(' + selectedHero.avatar + ')'}">-->
+  <!--<app-heroes [hero]="selectedHero"></app-heroes>-->
+<!--</div>-->
 <ul class="list-hero">
   <li style="list-style: none" *ngFor="let hero of listHero">
-    <a class="btn-detail" (click)="onSelect(hero)" [class.selectedHero]="hero===selectedHero">{{hero.name}}
+    <a routerLink="/heroes/{{hero.id}}" class="btn-detail" (click)="onSelect(hero)" [class.selectedHero]="hero===selectedHero">{{hero.name}}
     </a>
   </li>
 </ul>

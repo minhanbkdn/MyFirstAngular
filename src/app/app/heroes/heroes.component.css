@@ -1,0 +1,8 @@
+.hero {
+  color: white;
+  box-shadow: 5px 5px 5px #999999;
+  padding: 10px;
+  border: solid 1px green;
+  text-align: center;
+  background-size: 100% 100%;
+}
