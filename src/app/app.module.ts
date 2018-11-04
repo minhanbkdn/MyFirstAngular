@@ -11,6 +11,7 @@ import { ListBadboyComponent } from './app/list-badboy/list-badboy.component';
 import { ListMessageComponent } from './app/list-message/list-message.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './app/dashboard/dashboard.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { DashboardComponent } from './app/dashboard/dashboard.component';
     ListHeroComponent,
     ListBadboyComponent,
     ListMessageComponent,
-    DashboardComponent
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

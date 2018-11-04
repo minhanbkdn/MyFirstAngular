@@ -20,16 +20,12 @@ export class ListHeroComponent implements OnInit {
       heroes => this.listHero = heroes,
       error => console.log(error)
     );
-    this.heroService.getHeroById(3).subscribe(
-      hero => this.selectedHero = hero,
-      error => console.log(error)
-    );
   }
 
   onSelect(heroInput: Hero) {
     this.heroService.getHeroById(heroInput.id).subscribe(
       hero => this.selectedHero = hero,
       error => console.log(error)
-    );
+  );
   }
 }
